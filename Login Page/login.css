@@ -1,0 +1,244 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* header{
+    height: max(100px,10vh);
+} */
+.site-header {
+  height: 60px;
+  /* margin: 0 30px; */
+  background-color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  padding: 0;
+}
+
+.logo img {
+  height: 42px;
+  width: auto;
+  max-width: none;
+  max-height: none;
+  display: block;
+  background: transparent;
+  object-fit: contain;
+}
+
+.logo a:hover img {
+  opacity: 0.95;
+}
+.mob {
+  display: none;
+}
+.buttons .btn {
+  padding: 8px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.home {
+  margin-right: 10px;
+}
+.buttons button img {
+  height: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons button {
+  background-color: #0b2140;
+  border: none;
+  color: white;
+}
+.buttons button:hover {
+  background-color: #005bb5;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  flex: 1;
+}
+.ques{
+  height: 1.5rem;
+  cursor: pointer;
+}
+.ques:hover{
+  transform: scale(1.1);
+}
+.guideBox{
+  width: 25%;
+  height: 80%;
+  position: absolute;
+  left: 15px;
+  top: 80px;
+}
+.guideBox div{
+  display: none;
+}
+.guideBox img:hover ~ div{
+  display: block;
+}
+.loginTab {
+  background-color: #f5f7fa;
+  min-height: 400px;
+  height: min(75vh, 500px);
+  width: min(80vw, 400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.loginTab form {
+  height: 65%;
+  width: 80%;
+  /* background-color: blue; */
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginTab h2 {
+  margin: 0;
+}
+.loginInput {
+  height: 55%;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.passwordBox{
+  position: relative;
+  height: 30%;
+}
+.loginInput .passwordBox input{
+  height: 100%;
+  padding-right: 50px;
+}
+.loginInput span img {
+  position: absolute;
+  top: 33.33%;
+  right: 7%;
+  cursor: pointer;
+  height: 1rem;
+}
+.loginInput input {
+  width: 100%;
+  height: 30%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.loginInput input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 1;
+}
+.loginInput a {
+  color: #009cde;
+  font-size: 0.8em;
+}
+
+.loginTab form button {
+  width: 100%;
+  height: 45px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: white;
+  background-color: #0b2140;
+  cursor: pointer;
+}
+.loginTab p {
+  opacity: 50%;
+  margin: 5px;
+}
+.loginTab button {
+  width: 80%;
+  height: 45px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  cursor: pointer;
+}
+button:hover {
+  font-size: 0.85rem;
+  scale: 101%;
+}
+footer {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #009cde;
+}
+@media screen and (max-width:800px){
+  .guideBox{
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nor {
+    display: none;
+  }
+  .mob {
+    display: inline-block;
+  }
+  .buttons .btn {
+    padding: 8px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .loginInput input {
+    font-size: 0.8rem;
+  }
+  .loginInput input::placeholder {
+    font-size: 0.8rem;
+  }
+  .guideBox{
+    font-size: 0.8rem;
+  }
+}

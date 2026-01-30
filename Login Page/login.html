@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="./Asset 11.png" alt="EZPay Logo" />
+            </a>
+        </div>
+        <div class="buttons nor">
+            <button class="btn home">Home</button>
+            <button class="btn createwallet">Create Wallet</button>
+        </div>
+        <div class="buttons mob">
+            <button class="btn login"><img src="./home.png" alt=""></button>
+            <button class="btn createwallet"><img src="./wallet.png" alt=""></button>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="loginTab">
+            <form action="">
+                <h2>LogIn on EzPay</h2>
+                <div class="loginInput">
+                    <input type="text" id="contact" placeholder="Email or mobile number" required>
+                    <!-- <input type="tel" pattern="[0-9]{10}"> -->
+                    <div class="passwordBox">
+                        <input type="password" id="passwordField" placeholder="Password" required>
+                        <span toggle="#passwordField" onclick="togglePassword(this)"><img src="./hidden.png"
+                                alt="show"></span>
+                    </div>
+                    <a href="">Forgotten Password?</a>
+                </div>
+                <button type="submit">Next</button>
+            </form>
+            <p>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;&#9135;&#9135;&#9135;&#9135;
+            </p>
+            <button>SignUp</button>
+        </div>
+        <div class="guideBox">
+            <img src="./question-mark.png" class="ques" alt="?">
+            <div>
+                <h3>Guidelines</h3>
+                <ul>
+
+                    <li>
+
+                        <strong>Registered email required</strong>
+                        → Only users with an existing account can log in.
+                    </li>
+                    <li>
+
+                        <strong>Password mandatory</strong>
+                        → Ensures authorized access to the account.
+                    </li>
+                    <li>
+
+                        <strong>Email format validation</strong>
+                        → Prevents incorrect or invalid email entries.
+                    </li>
+                    <li>
+
+                        <strong>Secure encrypted authentication</strong>
+                        → Protects user credentials during login.
+                    </li>
+                    <li>
+
+                        <strong>Limited login attempts</strong>
+                        → Prevents brute-force and unauthorized access.
+                    </li>
+                    <li>
+
+                        <strong>Forgot password support</strong>
+                        → Allows users to recover access securely.
+                    </li>
+                    <li>
+
+                        <strong>Session-based access</strong>
+                        → Keeps users logged in safely during active use.
+                    </li>
+                    <li>
+
+                        <strong>Informative placeholders</strong>
+                        → Guides users on what input is required.
+
+                    </li>
+                    <li>
+
+                        <strong>Clear error messages</strong>
+                        → Helps users quickly correct mistakes.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="">Contact us</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="">Email</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="">Help</a>
+    </footer>
+</body>
+<script src="./login.js"></script>
+
+</html>

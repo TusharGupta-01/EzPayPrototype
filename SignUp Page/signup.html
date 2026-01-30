@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>SignUp Page</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="./Asset 11.png" alt="EZPay Logo" />
+            </a>
+        </div>
+        <div class="buttons nor">
+            <img src="./question-mark.png" class="ques" alt="?">
+            <button class="btn home">Home</button>
+            <button class="btn createwallet">Login</button>
+        </div>
+        <div class="buttons mob">
+            <button class="btn login"><img src="./home.png" alt=""></button>
+            <button class="btn createwallet"><img src="./login.png" alt=""></button>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="modal-overlay" id="guideline-modal">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h3>Guidelines</h3>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="modal-content">
+                    <ul>
+                        <li><strong>Valid email entry</strong>
+                            <br>
+                            → Ensures proper user identification.
+                        </li>
+                        <li><strong>Email verification required</strong>
+                            <br>
+                            → Confirms authenticity of the user.
+                        </li>
+                        <li><strong>Unique user registration</strong>
+                            <br>
+                            → Prevents duplicate accounts.
+                        </li>
+                        <li><strong>Strong password policy</strong>
+                            <br>
+                            → Enhances account security.
+                        </li>
+                        <li><strong>Password confirmation check</strong>
+                            <br>
+                            → Avoids password mismatch errors.
+                        </li>
+                        <li><strong>Secure data handling</strong>
+                            <br>
+                            → Protects user information and privacy.
+                        </li>
+                        <li><strong>Informative placeholders</strong>
+                            <br>
+                            → Improves ease of form completion.
+                        </li>
+                        <li><strong>Clear error messages</strong>
+                            <br>
+                            → Provides instant feedback on incorrect inputs.
+                        </li>
+                        <li><strong>Privacy-compliant onboarding</strong>
+                            <br>
+                            → Ensures user consent and data safety.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="loginTab">
+            <div class="logo">
+                <!-- <img src="Asset 11.png" alt="EZPay Logo" /> -->
+            </div>
+            <form action="" class="form-wizard">
+                <h2>Welcome to <b>EzPay</b></h2>
+
+                <div class="completed" hidden>
+                    <img src="./check-mark_1442912.png" alt="">
+                    <h3>Registration Successful!</h3>
+                    <p>Your account has been created.</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                    <ol>
+                        <li class="current">Basic Identity</li>
+                        <li>OTP Verifications</li>
+                        <li>Account Security Setup</li>
+                        <li>Wallet Creation</li>
+                    </ol>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <h3>Basic Identity</h3>
+                        <div class="loginInput">
+
+                            <label for="name">Enter your Name</label>
+                            <input type="text" name="username" id="name" placeholder="Full Name" required>
+                            <label for="email">Add your Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
+                            <label for="tel">Your Mobile Number</label>
+                            <input type="tel" id="tel" name="PhoneNo." placeholder="Mobile Number" required>
+                            <div class="selectBox">
+                                <div>
+
+                                    <label for="country">Select Country</label>
+                                    <select id="country-select" name="country">
+                                        <option value="">-- Select a Country --</option>
+                                        <!-- <option value="India">-- India --</option>
+                                        <option value="USA">-- USA --</option>
+                                        <option value="UAE">-- UAE --</option> -->
+                                    </select>
+                                </div>
+                                <div>
+
+                                    <label for="lang">Select Lang</label>
+                                    <select id="lang-select" name="lang">
+                                        <option value="En">-- EN --</option>
+                                        <!-- <option value="Hi">-- Hi --</option>
+                                        <option value="Lat">-- Lat --</option> -->
+
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3>Verifications</h3>
+                        <div class="loginInput">
+                            <label for="emailOTP">Email OTP</label>
+                            <input type="tel" name="emailOTP" id="emailOTP" placeholder="Email OTP (6-digit) " required>
+                            <label for="telOTP">Mobile Number OTP</label>
+                            <input type="tel" name="mobileOTP" id="telOTP" placeholder="Mobile OTP (6-digit)" required>
+                            <a href="">Resend OTP</a>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3>Account Security Setup</h3>
+                        <div class="loginInput">
+                            <label for="pin">Create Wallet PIN</label>
+                            <input type="text" name="pin" id="pin" placeholder="6 Digit PIN" required>
+                            <label for="confirmedPin">Confirm Your PIN</label>
+                            <input type="text" name="confirmedPin" id="confirmedPin" placeholder="Re-enter your PIN"
+                                required>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3>Wallet Creation</h3>
+
+                    </div>
+                </div>
+                <!-- <div class="loginInput">
+                    <label for="name">Add your Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label for="email">Add your Email</label>
+                    <input type="text" id="email" placeholder="Your email">
+                    <a href="">Forgotten Password?</a>
+                </div> -->
+                <div class="controls">
+                    <button class="prev-btn" id="btn1">Previous</button>
+                    <button class="next-btn" id="btn2">Next</button>
+                    <button class="submit-btn" id="btn3">Submit</button>
+                </div>
+            </form>
+            <!-- <p>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;&nbsp;&#9135;&#9135;&#9135;&#9135;
+            </p>
+            <button>SignUp</button> -->
+        </div>
+    </main>
+    <footer>
+        <a href="">Contact us</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="">Email</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="">Help</a>
+    </footer>
+</body>
+<script src="./signup.js"></script>
+
+</html>
